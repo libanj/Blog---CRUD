@@ -6,4 +6,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Inspired by [Net Ninja](https://github.com/iamshaunjp).
 
 ## .env
-REACT_APP_URL={API ENDPOINT}
+`REACT_APP_URL={API ENDPOINT}`
