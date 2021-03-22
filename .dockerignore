@@ -3,3 +3,8 @@ build
 .dockerignore
 Dockerfile
 Dockerfile.prod
+*.md
+!README*.md
+.git
+.cache
+docker-compose.yml
