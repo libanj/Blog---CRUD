@@ -1,0 +1,19 @@
+version: "3.8"
+services:
+  client:
+    stdin_open: true
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes: 
+      - ./:/app
+    ports:
+      - 3000:3000
+    environment:
+      - REACT_APP_URL=http://localhost:80/blogs
+  database:
+    image: clue/json-server
+    ports:
+      - 80:80
+    volumes: 
+      - /home/libanj/projects/liban-blog/data/db.json:/data/db.json
